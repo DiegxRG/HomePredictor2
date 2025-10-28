@@ -15,7 +15,7 @@ requests
 
 # --- Paquetes Opcionales / No necesarios para producción ---
 # python-dotenv # Opcional: Render inyecta las variables de entorno directamente
-
+python-dotenv 
 # --- Paquetes de Entrenamiento (Comentados) ---
 # (No necesarios para el backend de predicción, ahorran espacio)
 # matplotlib

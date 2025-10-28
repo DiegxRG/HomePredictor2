@@ -1,11 +1,23 @@
+# --- Inicio: Instalación de PyTorch solo para CPU (Más ligero) ---
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+# --- Fin: Instalación de PyTorch ---
+
+# --- Paquetes Esenciales del Servidor ---
 flask
 flask-cors
+gunicorn      # <-- AÑADIDO: Esencial para que Render ejecute el servidor
 numpy
 pandas
-torch
-scikit-learn
-supabase
-python-dotenv
+scikit-learn  # (Incluye joblib para cargar scalers/modelos)
+supabase      # (Para la conexión a la base de datos)
 requests
-matplotlib
-seaborn
+
+# --- Paquetes Opcionales / No necesarios para producción ---
+# python-dotenv # Opcional: Render inyecta las variables de entorno directamente
+
+# --- Paquetes de Entrenamiento (Comentados) ---
+# (No necesarios para el backend de predicción, ahorran espacio)
+# matplotlib
+# seaborn
+
